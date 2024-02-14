@@ -15,15 +15,15 @@
 
     <main class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
         <!-- home screen -->
-        <section class="home">
-            <div class=" hidden text-center min-h-screen flex flex-col gap-5 items-center justify-center">
+        <section id="home">
+            <div class="text-center min-h-screen flex flex-col gap-5 items-center justify-center">
                 <h1 class="text-[100px] font-bold text-white">ALPHA CLASH PRO</h1>
                 <p class="text-white">Unleash your keyboard Kung Fu: Press "Enter" to play</p>
-                <button class="btn text-black ">play now</button>
+                <button onclick="play()" class="btn text-black ">play now</button>
             </div>
         </section>
         <!-- play ground -->
-        <section class="play-ground hidden">
+        <section id="play-ground" class=" hidden">
             <div class=" flex flex-col items-center gap-5 justify-between pt-10">
                 <!-- screen -->
                 <div
@@ -83,18 +83,19 @@
                 </div>
             </div>
         </section>
-        <section class="scroll hidden">
+        <section class="scroll hidden ">
             <div class="flex justify-center items-center min-h-screen">
                 <div class=" text-white border-blue-300 w-[400px] flex flex-col gap-3 p-5 justify-center items-center bg-[#8f6dc8] rounded-2xl">
                     <h1 class=" text-7xl font-bold">Score : 0</h1>
-                    <button class="btn w-[200px]">Play Now</button>
+                    <button class="btn w-[200px] text-black text-2xl">Play Now</button>
                     <p class="">Practice will make you Pro</p>
                 </div>
             </div>
         </section>
 
     </main>
-    <script src="index.js"></script>
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
