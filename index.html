@@ -38,7 +38,7 @@
                         <kbd id="q" class="kbd">q</kbd>
                         <kbd id="w" class="kbd">w</kbd>
                         <kbd id="e" class="kbd">e</kbd>
-                         <kbd id="r" class="kbd">r</kbd>
+                        <kbd id="r" class="kbd">r</kbd>
                         <kbd id="t" class="kbd">t</kbd>
                         <kbd id="y" class="kbd">y</kbd>
                         <kbd id="u" class="kbd">u</kbd>
@@ -73,21 +73,23 @@
                     <button class="btn  bg-[#894189] border-none text-white hover:bg-slate-700 rounded-xl">
                         LIfe
                         <img src="images/heart.svg" alt="">
-                        <span>1</span>
+                        <span id="life-element">5</span>
                     </button>
                     <button class="btn bg-[#360490] border-none text-white hover:bg-slate-700 rounded-xl">
                         Score
                         <img src="images/dollar.svg" alt="">
-                        <span>1</span>
+                        <span id="display-score">0</span>
                     </button>
                 </div>
             </div>
         </section>
-        <section class="scroll hidden ">
+        <section id="scroll-element" class="hidden">
             <div class="flex justify-center items-center min-h-screen">
-                <div class=" text-white border-blue-300 w-[400px] flex flex-col gap-3 p-5 justify-center items-center bg-[#8f6dc8] rounded-2xl">
-                    <h1 class=" text-7xl font-bold">Score : 0</h1>
-                    <button class="btn w-[200px] text-black text-2xl">Play Now</button>
+                <div
+                    class=" text-white border-blue-300 w-[400px] flex flex-col gap-3 p-5 justify-center items-center bg-[#8f6dc8] rounded-2xl">
+                    <h1>Game over !</h1>
+                    <h1 class=" text-7xl font-bold"><span>Score :</span> <span id="final-score">0</span></h1>
+                    <button onclick="play()" class="btn w-[200px] text-black text-2xl">Play Now</button>
                     <p class="">Practice will make you Pro</p>
                 </div>
             </div>
